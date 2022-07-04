@@ -1,0 +1,18 @@
+{
+  "name": "reloj-de-ensuenyo",
+  "version": "1.0.0",
+  "description": "Lo mas increible que veras en tu vida, solo espera a que llegue esa hora tan especial y disfruta",
+  "main": "index.js",
+  "dependencies": {
+    "moment": "^2.29.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "reloj"
+  ],
+  "author": "Serafin / Manuel",
+  "license": "MIT"
+}
