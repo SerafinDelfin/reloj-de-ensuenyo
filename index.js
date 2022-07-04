@@ -20,15 +20,14 @@ function reloj(){
         var act = `${hours}_${mins}`
     }
 
-    mirror.forEach(function (element) {
-        console.log(element)
-        console.log(act)
-        if (element === act) {
+        console.log(act[3] + act[4])
+        console.log(act[0] + act[1])
+        if (act[0] + act[1] === act[4] + act[3]) {
             const mirror_hour = document.createElement('img')
             mirror_hour.src = (`./horas_espejo/${act}.png`)
+            mirror_hour.style.position = "absolute"
             document.body.appendChild(mirror_hour)
         } else {
-            console.log(act)
             const dh = document.createElement('img')
             dh.src = (`./horas_normales/dh${act[0]}.png`)
             dh.style.position = "absolute"
@@ -49,7 +48,6 @@ function reloj(){
             um.style.position = "absolute"
             document.body.appendChild(um)
         }
-    })
     setTimeout(reloj, 1000);
 }
 
